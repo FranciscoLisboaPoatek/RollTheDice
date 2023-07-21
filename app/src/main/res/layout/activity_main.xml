@@ -20,33 +20,32 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+        <ImageView
             android:id="@+id/dice1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/DefaultNumberPresentation"
-            android:textColor="#A1887F"
-            android:textSize="34sp"
-            tools:text="1" />
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/dice_1" />
 
         <Space
-            android:layout_width="75dp"
+            android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <TextView
+        <ImageView
             android:id="@+id/dice2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/DefaultNumberPresentation"
-            tools:text="1" />
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/dice_1" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
